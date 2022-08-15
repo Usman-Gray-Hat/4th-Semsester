@@ -1,12 +1,2 @@
 # 4th-Semsester
-//===================================//   
-
-
-
-
-  Self Learning &amp; Educational Purpose
-
-
-
-
-//===================================//
+Self Learning & Educational Purpose
