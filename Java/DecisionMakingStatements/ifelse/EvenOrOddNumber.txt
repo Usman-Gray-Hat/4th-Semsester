@@ -1,0 +1,26 @@
+package javaapplication1;
+
+/**
+ *
+ * @author Umer
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    { 
+        //Check if the number is even or odd.
+        
+        int value = 3;
+        if((value%2)==0)
+        {
+            System.out.println("Even Number");
+        }
+        else
+        {
+            System.out.println("Odd Number");
+        }
+    }
+}

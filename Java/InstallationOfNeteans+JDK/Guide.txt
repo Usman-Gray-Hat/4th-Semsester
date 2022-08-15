@@ -1,0 +1,19 @@
+===============================
+INSTALLATION OF NETBEANS + JDK:
+===============================
+
+* Go to google -> Search Netbeans + JDK.
+
+* Click on 1st link Java SE Downloads -> Click on Accept License Agreement.
+
+* Download Windows x64.
+
+* Now, install it.
+
+* Open Netbeans -> click on file -> Click on new project.
+
+* Click on Java in Categories section & click on Java Application in Projects section -> Click on next.
+
+* Set Project name in "Project Name Column" as "First_Project" -> Click on Finish.
+
+* Expand First_Project and click on First_Project.java -> Start coding in main function (TODO code application logic here).

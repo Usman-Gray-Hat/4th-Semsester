@@ -1,0 +1,25 @@
+public class First_Project{
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    { 
+        // Use back slash+t "\t" for one tab space.
+        // Use back slash+n "\n" for line break.
+        // You can use println function too for breaking the line.
+        //Short cut of System.out.println("") is sout + tab. 
+
+        System.out.print("Hello World");
+        System.out.print("Hello Bilal");
+        
+        System.out.print("\n"); //For breaking the line.
+        
+        System.out.print("Hello World \t"); //For one tab space.
+        System.out.print("Hello Usman \n"); //For line break.
+        
+        
+        System.out.println("Hello World");
+        System.out.println("Hello Ali");
+    }
+}

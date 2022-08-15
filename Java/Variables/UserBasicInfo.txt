@@ -1,0 +1,36 @@
+package javaapplication1;
+
+/**
+ *
+ * @author Umer
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    { 
+        //Always use capital 'S' for String data type.
+        //Use plus sign + for Concatination.
+  
+        
+        //Assigning values to variables.
+        String name = "Usman";
+        String gender = "Male";
+        int age = 22;
+        String email = "usman@gmail.com";
+        double salary = 75000.00;
+        float insentive = 20000.00f;
+        char favorite_letter = 'A';
+        
+        //Printing
+        System.out.println("Name is: "+name);
+        System.out.println("Gender is: "+gender);
+        System.out.println("Age is: "+age);
+        System.out.println("Email is: "+email);
+        System.out.println("Salary is: "+salary);
+        System.out.println("Insentive is: "+insentive);
+        System.out.println("Favorite letter is: "+favorite_letter);
+    }
+}
