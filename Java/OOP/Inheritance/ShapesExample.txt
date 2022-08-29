@@ -1,0 +1,74 @@
+
+package javaapplication1;
+
+/* In Java, Use 'extends' keyword for inheritance */
+
+//Rectangle class
+class Rectangle 
+{
+    public void draw_Rectangle()
+    {
+        System.out.println("Rectangle is drawing");
+    }
+}
+
+
+//Triangle class inherited with Rectangle class
+class Triangle extends Rectangle
+{
+    
+    public void draw_Triangle()
+    {
+        System.out.println("Triangle is drawing");
+    }
+}
+
+
+//Circle class inherited with Triangle class
+class Circle extends Triangle
+{
+    public void draw_Circle()
+    {
+        System.out.println("Circle is drawing");
+    }
+}
+
+
+//Cube class inherited with Circle class
+class Cube extends Circle
+{
+    public void draw_Cube()
+    {
+        System.out.println("Cube is drawing");
+    }
+}
+
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+
+    public static void main(String[] args) 
+    {   
+        //Making object of Cube class so that cube can access all classes containing functions.
+        Cube obj = new Cube();
+        
+
+        //For Rectangle
+        obj.draw_Rectangle();
+        
+
+        //For Triangle
+        obj.draw_Triangle();
+        
+
+        //For Circle
+        obj.draw_Circle();
+        
+
+        //For Cube
+        obj.draw_Cube();
+        
+    }
+}
