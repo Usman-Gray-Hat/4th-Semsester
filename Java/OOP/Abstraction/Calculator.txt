@@ -1,0 +1,107 @@
+
+package javaapplication1;
+import java.util.Scanner;
+
+abstract class Calculator
+{
+    Scanner input = new Scanner(System.in); 
+    public abstract void compute();
+}
+
+//Addition
+class Addition extends Calculator
+{
+    public @Override void compute()
+    {
+        System.out.println("Enter Number 1: ");
+        int num1 = input.nextInt();
+        
+        
+        System.out.println("Enter Number 2: ");
+        int num2 = input.nextInt();
+        
+        
+        int result = num1 + num2;
+        System.out.println("Answer of addition is: " + result);
+    }
+}
+
+//Subtraction
+class Subtraction extends Calculator
+{
+    public @Override void compute()
+    {
+        System.out.println("Enter Number 1: ");
+        int num1 = input.nextInt();
+        
+        
+        System.out.println("Enter Number 2: ");
+        int num2 = input.nextInt();
+        
+        
+        int result = num1 - num2;
+        System.out.println("Answer of Subtraction is: " + result);
+    }
+}
+
+//Multplication
+class Multiplication extends Calculator
+{
+    public @Override void compute()
+    {
+        System.out.println("Enter Number 1: ");
+        int num1 = input.nextInt();
+        
+        
+        System.out.println("Enter Number 2: ");
+        int num2 = input.nextInt();
+        
+        
+        int result = num1 * num2;
+        System.out.println("Answer of Multiplication is: " + result);
+    }
+}
+
+//Division
+class Division extends Calculator
+{
+    public @Override void compute()
+    {
+        System.out.println("Enter Number 1: ");
+        int num1 = input.nextInt();
+        
+        
+        System.out.println("Enter Number 2: ");
+        int num2 = input.nextInt();
+        
+        
+        int result = num1 / num2;
+        System.out.println("Answer of Division is: " + result);
+    }
+}
+
+
+
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {   
+        Calculator a;  //Addition
+        Calculator s;  //Subtraction
+        Calculator m;  //Multiplication
+        Calculator d;  //Division
+        
+        a = new Addition();
+        s = new Subtraction();
+        m = new Multiplication();
+        d = new Division();
+        
+        a.compute();
+        s.compute();
+        m.compute();
+        d.compute();
+    }
+}
