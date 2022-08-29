@@ -1,0 +1,81 @@
+
+package javaapplication1;
+
+/* 
+
+   In Java, use abstract keyword before class keyword.
+   In Java, use @Override keyword for overriding.
+
+*/
+
+
+//Abstract class
+abstract class Shape
+{
+    //abstract function
+    public abstract void draw(); //Abstract function does not contain body {Block of code}.
+}
+
+//Rectangle
+class Rectangle extends Shape
+{
+    public @Override void draw()
+    {
+        System.out.println("Rectangle is drawing");
+    }
+}
+
+
+//Triangle
+class Triangle extends Shape
+{
+    public @Override void draw()
+    {
+        System.out.println("Trianlge is drawing");
+    }
+}
+
+
+//Circle
+class Circle extends Shape
+{
+    public @Override void draw()
+    {
+        System.out.println("Circle is drawing");
+    }
+}
+
+
+//Cube
+class Cube extends Shape
+{
+    public @Override void draw()
+    {
+        System.out.println("Cube is drawing");
+    }
+}
+
+
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {   
+        Shape r;    //For Rectangle
+        Shape t;    //For Triangle
+        Shape c1;   //For Circle
+        Shape c2;   //For Cube
+        
+        r = new Rectangle();
+        t = new Triangle();
+        c1 = new Circle();
+        c2 = new Cube();
+        
+        r.draw();
+        t.draw();
+        c1.draw();
+        c2.draw();
+    }
+}
