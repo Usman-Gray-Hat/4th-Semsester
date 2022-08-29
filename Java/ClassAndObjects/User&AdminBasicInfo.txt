@@ -1,0 +1,61 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package javaapplication1;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Umer
+ */
+class Info
+{
+    //For User
+    String username = "Usman";
+    int user_age = 22;
+    String user_gender = "Male"; 
+    
+    //For Admin
+    String admin_name = "Ali";
+    int admin_age = 29;
+    String admin_gender = "Male";
+    
+    
+    //Function For User
+    public void UserInfo()
+    {
+        System.out.println("Username is: " + username);
+        System.out.println("User age is: " + user_age);
+        System.out.println("User gender is: " + user_gender);
+    }
+    
+    
+    //Function For Admin
+    public void AdminInfo()
+    {
+        System.out.println("Admin name is: " + admin_name);
+        System.out.println("Admin age is: " + admin_age);
+        System.out.println("Admin gender is: " + admin_gender);
+    }
+}
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+
+    public static void main(String[] args) 
+    {   
+        //Making object of Info class
+        Info obj = new Info();
+        
+
+        //For calling UserInfo function...
+        obj.UserInfo();
+        
+
+        //For calling AdminInfo function...
+        obj.AdminInfo();
+    }
+}
