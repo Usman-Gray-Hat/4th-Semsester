@@ -1,4 +1,6 @@
+
 package javaapplication1;
+import java.util.Scanner;
 
 /**
  *
@@ -11,26 +13,72 @@ public class JavaApplication1 {
      */
     public static void main(String[] args) 
     { 
-        //Always use capital 'S' for String data type.
-        //Use plus sign + for Concatination.
-  
+
+        //Using Scanner class to take input from user by using different functions. 
+        //Before using Scanner class's functions, import Scanner class package = import java.util.Scanner;
         
-        //Assigning values to variables.
-        String name = "Usman";
-        String gender = "Male";
-        int age = 22;
-        String email = "usman@gmail.com";
-        double salary = 75000.00;
-        float insentive = 20000.00f;
-        char favorite_letter = 'A';
+
+        //Making object of Scanner class to use its functions to take input from user of different data types.
+        Scanner input = new Scanner(System.in);
         
-        //Printing
-        System.out.println("Name is: "+name);
-        System.out.println("Gender is: "+gender);
-        System.out.println("Age is: "+age);
-        System.out.println("Email is: "+email);
-        System.out.println("Salary is: "+salary);
-        System.out.println("Insentive is: "+insentive);
-        System.out.println("Favorite letter is: "+favorite_letter);
+
+        //For Name
+        System.out.println("Enter your name: ");
+        String name = input.nextLine();
+        
+
+        //For Age
+        System.out.println("Enter your age: ");
+        int age = input.nextInt();
+        input.nextLine(); //Using nextLine()function to avoid skipping line because of escapse sequence "\n"
+
+
+        /*
+        Note: Scanner class uses "\n" escape sequence and therefore you need to add nextLine() function after
+        taking input in integer data type because integer data type takes only numeric value and not "\n" string value.
+        And therefore remaining string value "\n" breaks the line which causes skipping line issue.
+        */
+        
+
+        //For Gender
+        System.out.println("Enter your gender: ");
+        String gender = input.nextLine();
+        
+
+        //For email
+        System.out.println("Enter your email: ");
+        String email = input.next();
+        
+
+        //For Salary
+        System.out.println("Enter your salary: ");
+        float salary = input.nextFloat();
+        input.nextLine(); //Using nextLine()function to avoid skipping line because of escapse sequence "\n"
+        
+
+        //For Qualification
+        System.out.println("Enter your qualification: ");
+        String qualification = input.nextLine();
+        
+
+        //Printing Answers....
+        
+        //For Name
+        System.out.println("Name is: " + name);
+        
+        //For Age
+        System.out.println("Age is: " + age);
+        
+        //For Gender
+        System.out.println("Gender is: " + gender);
+        
+        //For Email
+        System.out.println("Email is : " + email);
+        
+        //For Salary
+        System.out.println("Salary is: " + salary); 
+        
+        //For Qualification
+        System.out.println("Qualification is: " + qualification);
     }
 }
