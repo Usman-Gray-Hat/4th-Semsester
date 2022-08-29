@@ -1,0 +1,43 @@
+
+package javaapplication1;
+import java.util.Scanner;
+
+/**
+ *
+ * @author Umer
+ */
+public class JavaApplication1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) 
+    {   
+        //Hard coded values
+        String username = "Usman123";
+        String password = "GrayHat";
+        
+
+        //Making Object Of Scanner Class
+        Scanner s = new Scanner(System.in);
+            
+
+        //Taking input form user
+        System.out.println("Enter Username: ");
+        String uname = s.nextLine();
+            
+        System.out.println("Enter Password: ");
+        String upassword = s.nextLine();
+            
+    
+        //Condition
+        if(uname.equals(username) && upassword.equals(password))
+        {
+            System.out.println("Login successful!");
+        }
+        else
+        {
+            System.out.println("Invalid username or password");
+        }
+    }
+}
